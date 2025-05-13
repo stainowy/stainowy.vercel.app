@@ -53,11 +53,11 @@ body {
 	gap: 40px;
 	left: 50%;
 	transform: translateX(-50%);
-	perspective: 1000px; /* opcjonalnie */
+	perspective: 1000px; 
 }
 
 .menu button {
-	transform-style: preserve-3d; /* wymusza izolację */
+	transform-style: preserve-3d; 
 }
 
 
