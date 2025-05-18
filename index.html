@@ -17,116 +17,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stainowy | Home</title>
-    <link rel="icon" href="assets\favicon.ico" type="image/png">
-    <meta name="description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <title>SCheck Blocklist</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-
-    <meta property="og:title" content="Stainowy" />
-    <meta property="og:description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
-    <meta property="og:image" content="https://stainowy.github.io/assets/thumbail.png" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="400" />
-    <meta property="og:url" content="https://stainowy.github.io" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap">
+    <meta property="og:title" content="SCheck-Blocklist" />
+    <meta property="og:description" content="Your system to block what you don't want!" />
+    <meta property="og:image" content="https://scheck-blocklist.vercel.app/assets/logo.png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:url" content="https://scheck-blocklist.vercel.app" />
     <meta property="og:type" content="website" />
 </head>
+
 <body>
+    <div id="navbar">
+        <a href="#" id="logo-link">
+            <img src="assets/favicon.ico" alt="SCheck-Logo" id="logo">
+        </a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#about">About Us</a>
+            <a href="https://github.com/SCheck-Blocklist" target="_blank">Github</a>
+        </div>
+    </div>
+
     <section id="baner">
-        <nav class="menu">
-            <button onclick="window.location.href='projects.html'">Projects</button>
-            <button><b>Home</b></button>
-            <button onclick="window.location.href='#about'">About Me</button>
-        </nav>
-        <section id="baner-text">
-            <h1><b>Stainowy</b></h1>
-            <br>
-            <p>Programmer and project coordinator </p>
-        </section>
+        <h1 id="header"></h1>
+        <p>Your system to block what you don't want!</p>   
     </section>
+
 
     <section id="about">
-        <br>
-        <br>
-        <br>
-        <p><b>Hi, I am Stainowy...</b></p>
-        <p>I am a young programmer driven by passion. I come from Poland (Polska Gurom) I started learning programming in 2023. I've already mastered many skills, including Python and HTML. You can find the full list somewhere lower on this page. :) Thanks to my skills, I've created, and I'm still working on, many interesting projects. I guess you know where you can find them? haha. I'm quite good at coordinating and managing, but that's just by the way. I know Polish and English very well. I am also learning Spanish. Never mind, keep scrolling</p>
 
-        <div class="social">
-            <button onclick="window.open('https://github.com/stainowy', '_blank')" title="GitHub"><i class="fab fa-github"></i></button>
-            <button onclick="window.open('https://discord.com/users/1168212040737890404', '_blank')" title="Discord"><i class="fab fa-discord"></i></button>
-            <button onclick="window.open('https://x.com/Stainowy', '_blank')" title="Twitter"><i class="fab fa-twitter"></i></button>
-            <button onclick="window.open('https://www.instagram.com/stainowy', '_blank')" title="Instagram"><i class="fab fa-instagram"></i></button>
-            <button onclick="window.open('https://t.me/stainowy', '_blank')" title="Telegram"><i class="fab fa-telegram"></i></button>
-            <button onclick="window.open('mailto:stainowy@proton.me', '_blank')" title="Email"><i class="fas fa-envelope"></i></button>
-        </div>
         <br>
-        <br>
+        <h2>What is SCheck Blocklist?</h2>
+        <p>
+            SCheck Blocklist is an open-source tool built for developers.           <br>
+            We offer verified public blocklists of domains, URLs & phrases. <br>
+            Use our Python library to fetch and validate data with ease.            <br>
+            Prefer no code? Our CLI engine lets you run it all locally.             <br>
+            Perfect for spam filtering, link blocking, or content moderation.       <br>
+            Free, transparent, and powered by community-driven submissions.         <br>
+
+        </p>
+
+
+        <div class="button-row">
+            <button onclick="window.open('https://github.com/SCheck-Blocklist/Datasets', '_blank')" title="Datasets">Datasets</button>
+            <button onclick="window.open('https://github.com/SCheck-Blocklist/Engine', '_blank')" title="Engine">Engine</button>
+            <button onclick="window.open('#', '_blank')" title="Python library">Python Library</button>
+        </div>
+
     </section>
-    
-    <section class="skills" id="skills">
-        <h3>What are my skills?</h3>
-        
-        <div class="skill">
-            <span>Management</span>
-            <div class="progress-bar">
-                <div class="progress" id="manage"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>Python</span>
-            <div class="progress-bar">
-                <div class="progress" id="python"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>HTML</span>
-            <div class="progress-bar">
-                <div class="progress" id="html"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>CSS</span>
-            <div class="progress-bar">
-                <div class="progress" id="css"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>Node.js</span>
-            <div class="progress-bar">
-                <div class="progress" id="node"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>Lua</span>
-            <div class="progress-bar">
-                <div class="progress" id="lua"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>Git</span>
-            <div class="progress-bar">
-                <div class="progress" id="git"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>SQL</span>
-            <div class="progress-bar">
-                <div class="progress" id="sql"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>Figma</span>
-            <div class="progress-bar">
-                <div class="progress" id="figma"></div>
-            </div>
-        </div>
-    </section>
-    
+
     <footer>
-        <p id="copyright">Stainowy © 2025 </p>
+        <br>
+        <p>&copy; 2025 SCheck. All rights reserved.</p>
     </footer>
+
+       <script src="script.js"></script>
 </body>
 </html>
