@@ -18,6 +18,7 @@
     <meta property="og:image:height" content="400" />
     <meta property="og:url" content="https://stainowy.github.io" />
     <meta property="og:type" content="website" />
+    <meta property="og:color" content="#0b0a0a" />
 </head>
 <body>
     <nav class="menu">
@@ -32,17 +33,28 @@
     
     <div class="projects-container">
         <div class="project-card">
-            <img src="assets/Thallium.png" alt="Thallium Logo">
+            <div class="slider">
+                <img src="assets/thallium.png" class="active" alt="Thallium Logo">
+                <span class="arrow left">&#10094;</span>
+                <span class="arrow right">&#10095;</span>
+            </div>
+
             <h2>Thallium</h2>
-            <p>I am a board member of the Thallium programming studio, which creates and manages many interesting projects.</p>
+            <p>I am a board member of the Thallium programming studio...</p>
             <button onclick="window.open('https://github.com/ThalliumStudio', '_blank')">View Project</button>
         </div>
 
+
     </div>
+
+
 
     <footer>
         <p id="copyright">Stainowy © 2025</p>
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>

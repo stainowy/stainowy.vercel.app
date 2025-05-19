@@ -1,17 +1,3 @@
-/*
-  ================================================
-   Made with heart by Stainowy (© 2025)
-   stainowy.vercel.app
-   github.com/stainowy
-
-  You MAY NOT:
-   - Use this code for commercial purposes.
-   - Remove credit or redistribute without license terms.
-
-   Respect the code. Respect the creator.
-  ================================================
-*/
-
 body {
 	font-family: "Montserrat", sans-serif;
 	background-color: #0b0a0a;
@@ -249,6 +235,8 @@ footer {
 	text-align: center;
 	transition: transform 0.3s, box-shadow 0.3s;
 	box-sizing: border-box;
+
+	
 }
 
 .project-card:hover {
@@ -453,3 +441,48 @@ footer {
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
   transition-delay: 2s;
 }
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.slider img.active {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  font-size: 24px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+
