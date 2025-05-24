@@ -20,6 +20,10 @@ body {
 	padding: 0 10%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #baner {
 	width: 100%;
 	height: 100vh;
@@ -252,6 +256,8 @@ footer {
 
 	
 }
+
+
 
 .project-card:hover {
 	transform: scale(1.05);
@@ -498,5 +504,4 @@ footer {
 .arrow.right {
   right: 10px;
 }
-
 
