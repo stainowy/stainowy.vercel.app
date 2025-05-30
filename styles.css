@@ -207,14 +207,11 @@ footer {
 	width: 80%;
 	margin: 0 auto;
 	height: 50px;
-	display: flex;
-	justify-content: flex-start;
 	align-items: center;
 	margin-top: 80px;
-	text-align: left;
+	text-align: center;
 	color: #e5e0e0;
 	font-size: 14px;
-	margin-left: 0;
 }
 
 
@@ -311,7 +308,7 @@ footer {
 }
 
 #error-baner h1 {
-	font-size: 200px;
+	font-size: 140px;
 	margin: 0;
 	text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
@@ -326,16 +323,17 @@ footer {
 	color: white;
 	border: 2px solid white;
 	padding: 15px 50px;
-	font-size: 18px;
+	font-size: 14px;
 	cursor: pointer;
 	border-radius: 15px;
 	margin-top: 30px;
+	font-family: "Montserrat", sans-serif;
 	transition: background 0.3s, color 0.3s;
 }
 
 #error-baner button:hover {
 	font-weight: bold;
-	transform: scale(1.1);
+	transform: scale(1.05);
 	box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
 
@@ -454,54 +452,3 @@ footer {
         font-size: 16px;
     }
 }
-
-
-#easteregg:hover .letter {
-  color: rgb(248, 172, 8);
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-  transition-delay: 2s;
-}
-
-.slider {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.slider img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: none;
-  transition: opacity 0.3s ease;
-}
-
-.slider img.active {
-  display: block;
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
-  color: white;
-  font-size: 24px;
-  padding: 8px 12px;
-  border-radius: 50%;
-  cursor: pointer;
-  user-select: none;
-}
-
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
-}
-
