@@ -1,0 +1,296 @@
+/*
+  ================================================
+   Made with heart by Stainowy (© 2025)
+   stainowy.vercel.app
+   github.com/stainowy
+
+  You MAY NOT:
+   - Use this code for commercial purposes.
+   - Remove credit or redistribute without license terms.
+
+   Respect the code. Respect the creator.
+  ================================================
+*/
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: #0b0a0a;
+	color: #e5e0e0;
+	margin: 0;
+	padding: 0 10%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#baner {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#baner h1 {
+	font-size: 100px;
+	margin: 0;
+	text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  perspective: 1000px;
+}
+
+.menu button {
+	background-color: transparent;
+	color: white;
+	border: 2.5px solid white;
+	padding: 10px 50px;
+	min-width: 200px;
+	font-size: 16px;
+	cursor: pointer;
+	font-family: "Montserrat", sans-serif;
+	transition: background 0.3s, color 0.3s;
+	border-radius: 15px;
+	z-index: 10;
+	transform-style: preserve-3d; 
+}
+
+.menu button:hover {
+	font-weight: bold;
+	transform: scale(1.1);
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+#about{
+	height: auto;
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 20px;
+}
+
+#about h2 {
+	font-size: 30px;
+	margin: 0;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin-top: 20px;
+}
+
+.social button {
+	background: none;
+	border: none;
+	padding: 12px;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.social button:hover {
+	transform: scale(1.4);
+	text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 20px;
+    height: 100vh;
+	padding-top: 100px;
+}
+
+.skills h3 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.skills-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.skill {
+    text-align: left;
+    margin: 10px;
+}
+
+.skill span {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.progress:hover {
+	background-color: #d4d4d4;
+}
+
+#manage {
+    width: 70%;
+}
+
+#backend {
+    width: 50%;
+}
+
+#frontend {
+    width: 40%;
+}
+
+#design {
+    width: 35%;
+}
+
+#admin {
+	width: 65%;
+}
+
+#security {
+	width: 20%;
+}
+
+footer {
+	width: 80%;
+	margin: 0 auto;
+	height: 50px;
+	align-items: center;
+	margin-top: 80px;
+	text-align: center;
+	color: #e5e0e0;
+	font-size: 14px;
+}
+
+@media (max-width: 768px) {
+	body {
+		padding: 0 5%;
+	}
+
+	#baner {
+		height: calc(100vh - 300px);
+		padding: 50px 0;
+	}
+
+	#baner h1 {
+		font-size: 50px;
+	}
+
+	.menu {
+		margin-top: 40px;
+		position: static;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.menu button {
+		min-width: 180px;
+		padding: 15px 40px;
+		font-size: 18px;
+		flex-wrap: wrap;
+	}
+
+	#about {
+		margin-left: 5%;
+		margin-right: 5%;
+		font-size: 16px;
+	}
+
+	#about h2 {
+		font-size: 24px;
+	}
+
+	.skills {
+		margin-top: 20%;
+	}
+
+	.skills .skill {
+		text-align: center;
+	}
+
+	.social {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+	}
+
+	.social button {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.skills-flex {
+		display: block;
+		text-align: left;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.skill {
+		width: 100%;
+		margin: 15px 0;
+	}
+
+	.progress-bar {
+		width: 300px;
+	}
+
+	.progress {
+		height: 100%;
+	}
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: static;
+        transform: none;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .menu button {
+        width: 80%;
+        max-width: 300px;
+        min-width: unset;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}

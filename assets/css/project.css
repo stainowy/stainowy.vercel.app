@@ -1,0 +1,162 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #0b0a0a;
+  color: #e5e0e0;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.close-btn {
+  margin-left: 16px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: transparent;
+  border: none;
+  color: #e5e0e0;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  color: white;
+  filter: drop-shadow(0 0 6px white);
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow-y: auto;
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+  background: #111;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.gallery:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
+}
+
+
+.slides {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slides img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  z-index: 1;
+}
+
+.slides img.active {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  color: white;
+  font-size: 48px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: color 0.3s ease;
+  border: 0;
+  z-index: 2;
+}
+
+.arrow:hover {
+  color: #a8d0e6;
+}
+
+.arrow.left {
+  left: 15px;
+}
+
+.arrow.right {
+  right: 15px;
+}
+
+.description {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  text-shadow: 0 0 8px rgba(255,255,255,0.2);
+}
+
+.description h1 {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.description button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.description button:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content {
+    flex: 1 1 auto;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .gallery {
+    height: 300px;
+    max-width: 100%;
+  }
+}
