@@ -12,41 +12,81 @@
   ================================================
 -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stainowy | Works</title>
-    <link rel="icon" href="assets\favicon.ico" type="image/png">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/png">
     <meta name="description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
 
     <meta name="robots" content="index, follow">
     <meta name="author" content="Stainowy">
     <link rel="canonical" href="https://stainowy.vercel.app/">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/works-gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" >
 
     <meta property="og:title" content="Stainowy" />
-    <meta property="og:description" content="Hi, I am Stainowy... You will find ABSOLUTELY nothing on this page" />
-    <meta property="og:image" content="https://stainowy.github.io/assets/thumbail.png" />
+    <meta property="og:description" content="Hi, I am Stainowy... On this page you will find my projects!" />
+    <meta property="og:image" content="https://stainowy.vercel.app/assets/images/thumbail.png" />
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="400" />
-    <meta property="og:url" content="https://stainowy.github.io" />
+    <meta property="og:url" content="https://stainowy.vercel.app" />
     <meta property="og:type" content="website" />
     <meta property="og:color" content="#0b0a0a" />
+
+    <script defer src="../assets/js/slider.js"></script>
 </head>
 <body>
-    <div id="error-baner">
-        <h1>SOON</h1>
-        <p id="easteregg">
-            Oooops! We couldn't find this page
-        </p>
+    <nav class="menu">
+        <button onclick="window.location.href='projects.html'">Projects</button>
+        <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='#'"><b>Works</b></button>
+    </nav>
 
-        <button onclick="window.location.href='index.html'">Go to Home</button>
+    <section class="projects-header">
+        <h1><b>My Works</b></h1>
+    </section>
+    
+    <div class="projects-container">
+        <div class="project-card" data-url="https://stainowy.vercel.app" id="stainweb">
+            <button class="arrow left" aria-label="Back photo">&#10094;</button>
+
+            <div class="slides">
+                <img src="assets/images/Portfolio/StainWeb/baner.png" class="active" alt="StainowyWeb Baner">
+                <img src="assets/images/Portfolio/StainWeb/about.png" alt="StainowyWeb About">
+                <img src="assets/images/Portfolio/StainWeb/skills.png" alt="StainowyWeb Skills">
+                <img src="assets/images/Portfolio/StainWeb/projects.png" alt="StainowyWeb Projects">
+            </div>
+
+            <button class="arrow right" aria-label="Next photo">&#10095;</button>
+
+            <h2>Stainowy Web</h2>
+        </div>
+
+        <div class="project-card" data-url="https://scheck-blocklist.vercel.app" id="scheck">
+            <button class="arrow left" aria-label="Back photo">&#10094;</button>
+
+            <div class="slides">
+                <img src="assets/images/SCheck/Web/baner.png" class="active" alt="SCheck Baner">
+                <img src="assets/images/SCheck/Web/about.png" alt="SCheck About">
+                <img src="assets/images/SCheck/Web/started.png" alt="SCheck Started">
+            </div>
+
+            <button class="arrow right" aria-label="Next photo">&#10095;</button>
+
+            <h2>SCheck Blocklist</h2>
+        </div>
+
+
     </div>
+
+    <footer>
+        <p id="copyright">Stainowy © 2025</p>
+    </footer>
 </body>
+
 </html>

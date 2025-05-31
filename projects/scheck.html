@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stainowy | SCheck</title>
-    <link rel="icon" href="assets\favicon.ico" type="image/png">
-    <meta name="description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stainowy | SCheck</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
-    <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="../assets/favicon.ico" type="image/png" />
+  <meta name="description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
 
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Stainowy">
-    <link rel="canonical" href="https://stainowy.vercel.app/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
+  <link rel="stylesheet" href="../assets/css/project.css" />
 
-    <meta property="og:title" content="Stainowy" />
-    <meta property="og:description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
-    <meta property="og:image" content="https://stainowy.vercel.app/assets/thumbail.png" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="400" />
-    <meta property="og:url" content="https://stainowy.vercel.app" />
-    <meta property="og:type" content="website" />
-    <meta property="og:color" content="#0b0a0a" />
-  <link rel="stylesheet" href="projects.css" />
-  <script defer src="projects.js"></script>
+  <!-- Twój uniwersalny slider -->
+  <script defer src="../assets/js/slider.js"></script>
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Stainowy" />
+  <link rel="canonical" href="https://stainowy.vercel.app/" />
+
+  <meta property="og:title" content="Stainowy" />
+  <meta property="og:description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
+  <meta property="og:image" content="https://stainowy.vercel.app/assets/images/thumbail.png" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="400" />
+  <meta property="og:url" content="https://stainowy.vercel.app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:color" content="#0b0a0a" />
 </head>
 <body>
   <div class="container">
-    <button onclick="window.location.href='../projects.html'" class="close-btn" aria-label="Close page">&times;</button>
+    <button
+      onclick="window.location.href='../projects.html'"
+      class="close-btn"
+      aria-label="Close page"
+    >
+      &times;
+    </button>
+
     <main class="content">
-      <div class="gallery">
+      <div class="gallery project-card" data-url="https://scheck-blocklist.vercel.app">
         <button class="arrow left" aria-label="Back photo">&#10094;</button>
+
         <div class="slides">
-          <img src="../assets/SCheck/baner.png" alt="Baner" class="active" />
-          <img src="../assets/SCheck/about.png" alt="About" />
-          <img src="../assets/SCheck/examples.png" alt="Examples" />
+          <img
+            src="../assets/images/SCheck/baner.png"
+            alt="Baner"
+            class="active"
+            loading="lazy"
+          />
+          <img
+            src="../assets/images/SCheck/about.png"
+            alt="About"
+            loading="lazy"
+          />
+          <img src="../assets/images/SCheck/examples.png" alt="Examples" loading="lazy" />
         </div>
+
         <button class="arrow right" aria-label="Next photo">&#10095;</button>
       </div>
+
       <section class="description">
         <h1>SCheck Blocklist</h1>
         <p>
-          SCheck Blocklist is an open source tool created for developers. We offer verified public blocklists for domains, URLs and phrases. As part of the project we also offer a CLI engine and a python library. The project is based on the python programming language and on a large amount of data in txt and json. I am its lead developer and founder and owner.
+          SCheck Blocklist is an open source tool created for developers. We
+          offer verified public blocklists for domains, URLs and phrases. As
+          part of the project we also offer a CLI engine and a python library.
+          The project is based on the python programming language and on a large
+          amount of data in txt and json. I am its lead developer, founder and
+          owner.
         </p>
-        <button onclick="window.open('https://scheck-blocklist.vercel.app', '_blank')">Project Website</button>
+        <button onclick="window.open('https://scheck-blocklist.vercel.app', '_blank')">
+          Project Website
+        </button>
       </section>
     </main>
   </div>

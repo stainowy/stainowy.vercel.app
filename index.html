@@ -17,8 +17,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stainowy | Home</title>
-    <link rel="icon" href="assets\favicon.ico" type="image/png">
+    <title>Stainowy</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/png">
     <meta name="description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
 
     <meta name="robots" content="index, follow">
@@ -27,11 +27,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <meta property="og:title" content="Stainowy" />
     <meta property="og:description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
-    <meta property="og:image" content="https://stainowy.vercel.app/assets/thumbail.png" />
+    <meta property="og:image" content="https://stainowy.vercel.app/assets/images/thumbail.png" />
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="400" />
     <meta property="og:url" content="https://stainowy.vercel.app" />
@@ -39,12 +39,12 @@
     <meta property="og:color" content="#0b0a0a" />
 </head>
 <body>
-    <section id="baner">
-        <nav class="menu">
+    <nav class="menu">
             <button onclick="window.location.href='projects.html'">Projects</button>
             <button><b>Home</b></button>
             <button onclick="window.location.href='works.html'">Works</button>
-        </nav>
+    </nav> 
+    <section id="baner">
         <section id="baner-text">
             <h1><b>Stainowy</b></h1>
             <br>
@@ -69,66 +69,55 @@
     </section>
     
     <section class="skills" id="skills">
-        <h3>What are my skills?</h3>
+        <h3>What can I do?</h3>
         
-        <div class="skill">
-            <span>Management</span>
-            <div class="progress-bar">
-                <div class="progress" id="manage"></div>
+        <div class="skills-flex">
+            <div class="skill">
+                <span>Management</span>
+                <div class="progress-bar">
+                    <div class="progress" id="manage"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Administration</span>
+                <div class="progress-bar">
+                    <div class="progress" id="admin"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Cybersecurity</span>
+                <div class="progress-bar">
+                    <div class="progress" id="security"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="skills-flex">
+            <div class="skill">
+                <span>UI/UX Design</span>
+                <div class="progress-bar">
+                    <div class="progress" id="design"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Backend Development</span>
+                <div class="progress-bar">
+                    <div class="progress" id="backend"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Frontend Development</span>
+                <div class="progress-bar">
+                    <div class="progress" id="frontend"></div>
+                </div>
             </div>
         </div>
-        <div class="skill">
-            <span>Python</span>
-            <div class="progress-bar">
-                <div class="progress" id="python"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>HTML</span>
-            <div class="progress-bar">
-                <div class="progress" id="html"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>CSS</span>
-            <div class="progress-bar">
-                <div class="progress" id="css"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>Node.js</span>
-            <div class="progress-bar">
-                <div class="progress" id="node"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>Lua</span>
-            <div class="progress-bar">
-                <div class="progress" id="lua"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>Git</span>
-            <div class="progress-bar">
-                <div class="progress" id="git"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>SQL</span>
-            <div class="progress-bar">
-                <div class="progress" id="sql"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>Figma</span>
-            <div class="progress-bar">
-                <div class="progress" id="figma"></div>
-            </div>
-        </div>
+
     </section>
     
     <footer>
-        <p id="copyright">Stainowy © 2025 </p>
+        <p id="copyright">Stainowy © 2025</p>
     </footer>
 </body>
 </html>
