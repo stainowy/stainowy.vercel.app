@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" >
 
+    <script defer src="../assets/js/hamburger.js"></script>
+
     <meta property="og:title" content="Stainowy" />
     <meta property="og:description" content="Hi, I am Stainowy... On this page you will find my projects!" />
     <meta property="og:image" content="https://stainowy.vercel.app/assets/images/thumbail.png" />
@@ -44,6 +46,17 @@
         <button onclick="window.location.href='index.html'">Home</button>
             <button onclick="window.location.href='works.html'">Works</button>
     </nav>
+
+    <div id="hamburger-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+        <nav id="hamburger-menu">
+            <a href="index.html">Home</a>
+            <a href="projects.html"><b>Projects</b></a>
+            <a href="works.html">Works</a>
+            <span id="close-btn"><i class="fa-solid fa-xmark"></i></span>
+        </nav>
 
     <section class="projects-header">
         <h1><b>My Projects</b></h1>
