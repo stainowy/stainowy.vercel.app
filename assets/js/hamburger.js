@@ -6,24 +6,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     hamburgerToggle.addEventListener('click', function() {
         hamburgerMenu.classList.add('active');
-        hamburgerToggle.style.display = 'none'; // Ukryj trzy kreski
+        hamburgerToggle.style.display = 'none';
     });
     closeBtn.addEventListener('click', function() {
         hamburgerMenu.classList.remove('active');
-        hamburgerToggle.style.display = 'block'; // Pokaż trzy kreski
+        hamburgerToggle.style.display = 'block';
     });
 
     hamburgerMenu.addEventListener('click', function(e) {
         if (e.target === hamburgerMenu) {
             hamburgerMenu.classList.remove('active');
-            hamburgerToggle.style.display = 'block'; // Pokaż trzy kreski
+            hamburgerToggle.style.display = 'block';
         }
     });
 
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && hamburgerMenu.classList.contains('active')) {
             hamburgerMenu.classList.remove('active');
-            hamburgerToggle.style.display = 'block'; // Pokaż trzy kreski
+            hamburgerToggle.style.display = 'block';
         }
     });
 });
