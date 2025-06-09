@@ -363,7 +363,11 @@ html {
 }
 
 
-
+#discord h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+}
 
 
 
