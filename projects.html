@@ -17,7 +17,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stainowy | Projects</title>
+    <title>Projects • Stainowy</title>
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <meta name="description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
 
@@ -25,7 +25,7 @@
     <meta name="author" content="Stainowy">
     <link rel="canonical" href="https://stainowy.vercel.app/">
 
-    <link rel="stylesheet" href="assets/css/projects-gallery.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" >
 
@@ -42,9 +42,9 @@
 </head>
 <body>
     <nav class="menu">
-        <button onclick="window.location.href='#'"><b>Projects</b></button>
+        <button onclick="window.location.href='#'"><b>Portfolio</b></button>
         <button onclick="window.location.href='index.html'">Home</button>
-            <button onclick="window.location.href='works.html'">Portfolio</button>
+            <button onclick="window.location.href='index.html#about'">About Me</button>
     </nav>
 
     <div id="hamburger-toggle">
@@ -53,34 +53,50 @@
 
         <nav id="hamburger-menu">
             <a href="index.html">Home</a>
-            <a href="projects.html"><b>Projects</b></a>
-            <a href="works.html">Portfolio</a>
+            <a href="projects.html"><b>Portfolio</b></a>
+            <a href="index.html#about">About Me</a>
             <span id="close-btn"><i class="fa-solid fa-xmark"></i></span>
         </nav>
 
     <section class="projects-header">
-        <h1><b>My Projects</b></h1>
+        <h1><b>Portfolio</b></h1>
     </section>
     
     <div class="projects-container">
-        <a href="projects/thallium.html"><div class="project-card">
+        <div class="project-card">
             <div class="slider">
-                <img src="assets/images/Thallium/logo.png" class="active" alt="Thallium Logo">
+                <img src="assets/images/StainsWeb/baner.png" class="active" alt="Baner">
             </div>
 
-            <h2>Thallium</h2>
-            <p>Thallium is a programming studio that allows us to combine other small projects into something big, and I am its founder.</p>
-        </div></a>
+            <h2>stainowy.vercel.app</h2>
+            <div class="tags-container">
+                <div class="tag highlighted">Web Development</div>
+                <div class="tag">JavaScript</div>
+                <div class="tag">HTML and CSS</div>
+            </div>
+            <p>stainowy.vercel.app is my portfolio site written in HTML with CSS and JavaScript. It contains information about me and my projects. You are on this site!</p>
+            <a href="https://github.com/stainowy/stainowy.vercel.app/" class="more">Learn more...</a>
+        </div>
 
-    <a href="projects/scheck.html"><div class="project-card">
-        <div class="slider">
-                <img src="assets/images/SCheck/logo.png" class="active" alt="SCheck Logo">
+        <div class="project-card">
+            <div class="slider">
+                <img src="assets/images/SCheck/baner.png" class="active" alt="Baner">
             </div>
 
             <h2>SCheck-Blocklist</h2>
-            <p>SCheck Blocklist is an open-source tool built for developers. We offer verified public blocklists of domains, URLs & phrases.</p>
-        </div></a>
+            <div class="tags-container">
+                <div class="tag highlighted">Management & Development</div>
+                <div class="tag">Markdown</div>
+                <div class="tag">Python</div>
+                <div class="tag">HTML and CSS</div>
+            </div>
+            <p>SCheck-Blocklist - Your system for blocking what you don't want. Easy to integrate and use blocklist of links and phrases.</p>
+            <a href="https://scheck-blocklist.vercel.app/" class="more">Learn more...</a>
+        </div>
+
+        
     </div>
+
 
     <footer>
         <p id="copyright">Stainowy © 2025</p>

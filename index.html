@@ -42,115 +42,115 @@
     <meta property="og:color" content="#0b0a0a" />
 </head>
 <body>
-    <nav class="menu">
-            <button onclick="window.location.href='projects.html'">Projects</button>
-            <button onclick="window.location.href='index.html'"><b>Home</b></button>
-            <button onclick="window.location.href='works.html'">Portfolio</button>
-    </nav>
-    
-    <div id="hamburger-toggle">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-
-        <nav id="hamburger-menu">
-            <a href="index.html"><b>Home</b></a>
-            <a href="projects.html">Projects</a>
-            <a href="works.html">Portfolio</a>
-            <span id="close-btn"><i class="fa-solid fa-xmark"></i></span>
+    <main class="screens-wrapper" role="main">
+        <nav class="menu">
+                <button onclick="window.location.href='projects.html'">Portfolio</button>
+                <button onclick="window.location.href='index.html'"><b>Home</b></button>
+                <button onclick="window.location.href='#about'">About Me</button>
         </nav>
-
-    <section id="baner">
-        <section id="baner-text">
-            <h1><b>Stainowy</b></h1>
-            <br>
-            <p>Programmer and project coordinator </p>
-        </section>
-    </section>
-
-    <section id="about">
-        <br>
-        <p><b>Hi, I am Stainowy...</b></p>
-        <p>I am a young programmer driven by passion. I come from Poland (Polska Gurom) I started learning programming in 2023. I've already mastered many skills, including Python and HTML. You can find the full list somewhere lower on this page. :) Thanks to my skills, I've created, and I'm still working on, many interesting projects. I guess you know where you can find them? haha. I'm quite good at coordinating and managing, but that's just by the way. I know Polish and English very well. I am also learning Spanish. Never mind, keep scrolling</p>
-
-        <div class="social">
-            <button onclick="window.open('https://github.com/stainowy', '_blank')" title="GitHub"><i class="fab fa-github"></i></button>
-            <button onclick="window.open('https://discord.com/users/1168212040737890404', '_blank')" title="Discord"><i class="fab fa-discord"></i></button>
-            <button onclick="window.open('https://x.com/Stainowy', '_blank')" title="Twitter"><i class="fab fa-twitter"></i></button>
-            <button onclick="window.open('https://www.instagram.com/stainowy', '_blank')" title="Instagram"><i class="fab fa-instagram"></i></button>
-            <button onclick="window.open('https://t.me/stainowy', '_blank')" title="Telegram"><i class="fab fa-telegram"></i></button>
-            <button onclick="window.open('mailto:stainowy@proton.me', '_blank')" title="Email"><i class="fas fa-envelope"></i></button>
-        </div>
-        <br>
-    </section>
-    
-    <section class="skills" id="skills">
-        <h3>What can I do?</h3>
         
-        <div class="skills-flex">
-            <div class="skill">
-                <span>Management</span>
-                <div class="progress-bar">
-                    <div class="progress" id="manage"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <span>Administration</span>
-                <div class="progress-bar">
-                    <div class="progress" id="admin"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <span>Cybersecurity</span>
-                <div class="progress-bar">
-                    <div class="progress" id="security"></div>
-                </div>
-            </div>
-
+        <div id="hamburger-toggle">
+            <i class="fa-solid fa-bars"></i>
         </div>
 
-        <div class="skills-flex">
-            <div class="skill">
-                <span>UI/UX Design</span>
-                <div class="progress-bar">
-                    <div class="progress" id="design"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <span>Backend Development</span>
-                <div class="progress-bar">
-                    <div class="progress" id="backend"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <span>Frontend Development</span>
-                <div class="progress-bar">
-                    <div class="progress" id="frontend"></div>
-                </div>
-            </div>
-        </div>
+            <nav id="hamburger-menu">
+                <a href="index.html"><b>Home</b></a>
+                <a href="projects.html">Projects</a>
+                <a href="#about">About</a>
+                <span id="close-btn"><i class="fa-solid fa-xmark"></i></span>
+            </nav>
 
-    </section>
+        <section id="baner" class="screen">
+            <section id="baner-text">
+                <h1><b>Stainowy</b></h1>
+                <br>
+                <p>Programmer and project coordinator </p>
+            </section>
+        </section>
 
-    <section id="discord">
-        <h2>Join to My Community!</h2>
-        <div class="discord-banner">
-            <img src="assets/images/community.png" alt="Stain's Community Logo" class="server-logo" />
-            <div class="banner-content">
-            <h3>Stain's Community</h3>
-            <p>A corner on discord where everyone can have a good time. Join our Polish community!</p>
-            <p class="online-count" id="discord-stats">Loading members...</p>
-            <div class="banner-buttons">
-                <a href="https://discord.gg/FpmZxpsjmq" target="_blank">
-                <button class="join-btn">Join Discord</button>
-                </a>
-                <a href="stains-community.html"><span class="read-more-link">Read More</span></a>
+        <section id="about" class="screen">
+            <p><b>Hi, I am Stainowy...</b></p>
+            <p>I am a young programmer driven by passion. I come from Poland (Polska Gurom) I started learning programming in 2023. I've already mastered many skills, including Python and HTML. You can find the full list somewhere lower on this page. :) Thanks to my skills, I've created, and I'm still working on, many interesting projects. I guess you know where you can find them? haha. I'm quite good at coordinating and managing, but that's just by the way. I know Polish and English very well. I am also learning Spanish. Never mind, keep scrolling</p>
+
+            <div class="social">
+                <button onclick="window.open('https://github.com/stainowy', '_blank')" title="GitHub"><i class="fab fa-github"></i></button>
+                <button onclick="window.open('https://discord.com/users/1168212040737890404', '_blank')" title="Discord"><i class="fab fa-discord"></i></button>
+                <button onclick="window.open('https://x.com/Stainowy', '_blank')" title="Twitter"><i class="fab fa-twitter"></i></button>
+                <button onclick="window.open('https://www.instagram.com/stainowy', '_blank')" title="Instagram"><i class="fab fa-instagram"></i></button>
+                <button onclick="window.open('https://t.me/stainowy', '_blank')" title="Telegram"><i class="fab fa-telegram"></i></button>
+                <button onclick="window.open('mailto:stainowy@proton.me', '_blank')" title="Email"><i class="fas fa-envelope"></i></button>
             </div>
+        </section>
+        
+        <section class="screen skills" id="skills">
+            <h3>What can I do?</h3>
+            
+            <div class="skills-flex">
+                <div class="skill">
+                    <span>Management</span>
+                    <div class="progress-bar">
+                        <div class="progress" id="manage"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Administration</span>
+                    <div class="progress-bar">
+                        <div class="progress" id="admin"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Cybersecurity</span>
+                    <div class="progress-bar">
+                        <div class="progress" id="security"></div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </section>
-    
-    <footer>
-        <p id="copyright">Stainowy © 2025</p>
-    </footer>
+
+            <div class="skills-flex">
+                <div class="skill">
+                    <span>UI/UX Design</span>
+                    <div class="progress-bar">
+                        <div class="progress" id="design"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Backend Development</span>
+                    <div class="progress-bar">
+                        <div class="progress" id="backend"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Frontend Development</span>
+                    <div class="progress-bar">
+                        <div class="progress" id="frontend"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="discord" class="screen">
+            <h2>Join to My Community!</h2>
+            <div class="discord-banner">
+                <img src="assets/images/community.png" alt="Stain's Community Logo" class="server-logo" />
+                <div class="banner-content">
+                <h3>Stain's Community</h3>
+                <p>A corner on discord where everyone can have a good time. Join our Polish community!</p>
+                <p class="online-count" id="discord-stats">Loading members...</p>
+                <div class="banner-buttons">
+                    <a href="https://discord.gg/FpmZxpsjmq" target="_blank">
+                    <button class="join-btn">Join Discord</button>
+                    </a>
+                    <a href="stains-community.html"><span class="read-more-link">Read More</span></a>
+                </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p id="copyright">Stainowy © 2025</p>
+        </footer>
+    </main>
 </body>
 </html>
