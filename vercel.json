@@ -25,11 +25,6 @@
       "source": "/telegram",
       "destination": "https://t.me/stainowy",
       "permanent": true
-    },
-    {
-      "source": "/email",
-      "destination": "mailto:stainowy@proton.me",
-      "permanent": true
     }
   ]
 }
