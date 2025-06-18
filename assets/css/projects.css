@@ -25,6 +25,7 @@ a {
   color: inherit;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -61,7 +62,7 @@ html {
 }
 
 #hamburger-toggle {
-  position: relative;
+  position: fixed;
   top: 20px;
   right: 20px;
   font-size: 32px;
@@ -84,7 +85,6 @@ html {
   backdrop-filter: blur(8px);
   transform: translateX(100%);
   z-index: 2000;
-  transition: transform 0.3s ease-in-out;
 }
 
 #hamburger-menu.active {
@@ -122,6 +122,10 @@ html {
   z-index: 2002;
 }
 
+#hamburger-menu {
+    transition: transform 0.3s ease-in-out;
+}
+
 @media (max-width: 768px) {
     .menu {
         display: none !important;
@@ -129,18 +133,16 @@ html {
     
     #hamburger-toggle {
         display: block !important;
-		position: relative;
-		text-align: right;
     }
 }
 
 @media (min-width: 769px) {
     #hamburger-toggle {
-        display: none !important;		
+        display: none !important;
     }
     
     #hamburger-menu {
-        display: none !important
+        display: none !important;
     }
 }
 
@@ -179,42 +181,36 @@ footer {
 	background-color: transparent;
 	border: 2px solid white;
 	border-radius: 20px;
-	width: 350px;
-	min-height: 530px;
-	text-align: left; 
+	padding: 20px;
+	width: 300px;
+	min-height: 430px;
+	text-align: center;
 	transition: transform 0.3s, box-shadow 0.3s;
 	box-sizing: border-box;
-	padding: 0 20px 20px; 
-	display: flex;
-	flex-direction: column;
+}
+
+.project-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
 
 .project-card img {
-	width: calc(100% + 40px);
-	margin-left: -20px;
-	margin-bottom: 15px;
-	height: 210px;
+	width: 100%;
+	height: 180px;
 	object-fit: cover;
-	border-radius: 20px 20px 0 0;
+	border-radius: 15px;
+	margin-bottom: 15px;
 }
- 
 
 .project-card h2 {
 	font-size: 24px;
 	margin: 10px 0;
-	text-align: left; 
 }
 
 .project-card p {
 	font-size: 16px;
 	color: #ccc;
 	margin-bottom: 20px;
-	text-align: left;
-}
-
-.project-card:hover {
-	transform: scale(1.05);
-	box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
 
 .project-card button {
@@ -226,22 +222,10 @@ footer {
 	cursor: pointer;
 	border-radius: 15px;
 	transition: 0.3s;
-	align-self: flex-start;
 }
 
 .project-card button:hover {
 	box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-}
-
-.more {
-  color: #ccc;
-  font-size: 14px;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.more:hover {
-  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -276,6 +260,10 @@ footer {
 		margin-left: 15px;
 	}
 
+	.project-card img {
+		width: 200px;
+	}
+
 	#footer {
 		width: 100%;
 		margin: 0 auto;
@@ -304,41 +292,5 @@ footer {
         min-width: unset;
         padding: 12px 20px;
         font-size: 16px;
-    }
-}
-
-.tags-container {
-    margin-top: 12px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 3px;
-}
-
-.tag {
-    border: 1.5px solid rgb(54, 53, 53);
-    border-radius: 20px;
-    padding: 3px 8px;
-    color: white;
-    background: transparent;
-    font-weight: 500;
-    font-size: 0.75rem;
-    user-select: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    cursor: default;
-    white-space: nowrap;
-}
-
-.tag.highlighted {
-    border: 1.5px solid rgb(255, 255, 255);   
-    font-weight: 600;
-}
-
-@media (max-width: 400px) {
-    .tag {
-        font-size: 0.75rem;
-        padding: 4px 10px;
-        border-width: 1px;
     }
 }

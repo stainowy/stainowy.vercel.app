@@ -1,3 +1,35 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/discord",
+      "destination": "https://discord.com/users/1168212040737890404",
+      "permanent": true
+    },
+    {
+      "source": "/github",
+      "destination": "https://github.com/stainowy",
+      "permanent": true
+    },
+    {
+      "source": "/x",
+      "destination": "https://x.com/Stainowy",
+      "permanent": true
+    },
+    {
+      "source": "/instagram",
+      "destination": "https://www.instagram.com/stainowy",
+      "permanent": true
+    },
+    {
+      "source": "/telegram",
+      "destination": "https://t.me/stainowy",
+      "permanent": true
+    },
+    {
+      "source": "/email",
+      "destination": "mailto:stainowy@proton.me",
+      "permanent": true
+    }
+  ]
 }
