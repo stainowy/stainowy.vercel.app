@@ -1,0 +1,35 @@
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #0b0a0a;
+	color: #e5e0e0;
+	margin: 0;
+	padding: 0 10%;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.error-baner {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #0b0a0a;
+	color: #e5e0e0;
+}
+
+.error-baner h1 {
+	font-size: 140px;
+	margin: 0;
+	text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.error-baner p {
+	font-size: 24px;
+	margin: 20px 0;
+}

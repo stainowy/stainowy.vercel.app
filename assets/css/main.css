@@ -1,0 +1,265 @@
+.hero {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 100px;
+	margin: 0;
+	text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.about-us {
+    display: flex;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.aboutLeft {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex: 1 1 150px;
+}
+
+.aboutRight {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex: 1 1 150px;
+}
+
+.aboutRight p {
+    font-size: 18px;
+    color: #ffffffcc;
+    margin: 0;
+}
+
+.aboutRight h3 {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.aboutLeft h3 {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.aboutLeft p {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.socialRow {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.socialIcons a i {
+  font-size: 22px;
+  color: #ffffffcc;
+  transition: transform 0.3s ease, color 0.3s ease;
+    transform-origin: center;
+}
+
+.socialIcons a:hover i {
+    color: #ffffff;
+    transform: scale(1.25);
+}
+
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+    border: 1px solid #181d1d;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    width: 400px;
+}
+
+.feature-card h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.feature-card i {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffffcc;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+    margin: 150px 0 50px 0;
+}
+
+.tech-card {
+    padding: 20px 16px;
+    min-height: 120px;
+    border-radius: 6px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tech-card p {
+    color: rgba(255, 255, 255, 0.596);
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.tech-card h3 {
+    font-size: 36px;
+    line-height: 1;
+    color: #f5f5f7;
+    margin: 0;
+    font-weight: 500;
+}
+.tech-card.intro {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .grid > div h3 { 
+        font-size: 30px; 
+    }
+}
+
+@media (min-width: 521px) {
+    .grid > div:first-child h3 {
+        font-size: 25px;
+        color: #dcdcdc;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 14px; 
+    }
+    .grid > div:first-child { 
+        grid-column: 1 / -1; 
+    }
+    .grid > div h3 { 
+        font-size: 26px; 
+    }
+    .grid > div p { 
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 868px) {
+    .about-us {
+        margin-top: 60px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .aboutLeft,
+    .aboutRight {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutLeft h3,
+    .aboutLeft p {
+        text-align: center;
+    }
+
+    .aboutLeft .buttonsGrid {
+        justify-content: center;
+    }
+
+    .aboutRight {
+        height: auto;
+        text-align: left;
+    }
+
+    .feature-card {
+        position: relative;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+	.hero {
+		height: 100vh;
+		padding: 50px 0;
+	}
+
+	.hero h1 {
+		font-size: 70px;
+	}
+
+    .hero p {
+        font-size: 16px;
+    }
+
+	.about {
+		margin-left: 5%;
+		margin-right: 5%;
+		font-size: 16px;
+	}
+
+	.about h2 {
+		font-size: 24px;
+	}
+}
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stainowy</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
+
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Stainowy">
+    <link rel="canonical" href="https://stainowy.pages.dev/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+
+    <script defer src="assets/js/hamburger.js"></script>
+    <script defer src="assets/js/animations.js"></script>
+    <script defer src="assets/js/info.js"></script>
+
+    <meta property="og:title" content="Stainowy" />
+    <meta property="og:description" content="Hi, I am Stainowy... I am a young programmer and coordinator driven by passion." />
+    <meta property="og:image" content="https://stainowy.pages.dev/assets/images/thumbail.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:url" content="https://stainowy.pages.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:color" content="#0b0a0a" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <nav class="navbar glass-effect" id="navbar">
+            <b>Stainowy</b>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <div class="toggle-hamburger" id="toggleham">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="hamburger-wrapper" id="hamburger">
+        <div class="hamburger glass-effect">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/contact">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="contact-hero">
+            <div class="contact-left">
+                <h3 class="fade-in-up">Let's Talk</h3>
+                <p class="fade-in-up">Have questions or want to know what I can do for you? Send me a message using the form or contact me directly.</p>
+
+                <div class="contact-cards">
+                    <div class="hero-feature glass-effect fade-in-up cursor-pointer" onclick="window.open('mailto:stainowyproton.me')">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="hero-feature-content">
+                            <h4>E-mail</h4>
+                            <p>stainowy@proton.me</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-feature glass-effect fade-in-up">
+                        <i class="fa-solid fa-clock"></i>
+                        <div class="hero-feature-content">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday, 10:00-20:00</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-feature glass-effect fade-in-up cursor-pointer" onclick="window.open('/discord')">
+                        <i class="fa-brands fa-discord  "></i>
+                        <div class="hero-feature-content">
+                            <h4>Discord Messages</h4>
+                            <p>Send me a private message.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <div class="contact-form-container fade-in-up">
+                    <div class="contact-form-header">
+                        <h4>Write to me</h4>
+                        <p>I'd love to hear from you</p>
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Your nickname" id="nickname" required maxlength="100">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="john@example.com" id="email" required maxlength="240">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-textarea" placeholder="Your message to us..." id="message" required maxlength="1000"></textarea>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" class="checkbox-input" id="privacy" required>
+                            <label class="checkbox-label" for="privacy">
+                                I agree to the <a href="/privacy" target="_blank">Privacy Policy</a>.
+                            </label>
+                        </div>
+
+                        <div class="captcha-container">
+                            <div class="cf-turnstile" data-sitekey="0x4AAAAAABz3NiquGjkjzobn" data-theme="dark" data-size="normal"></div>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            Send Message 
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="fade-in-up">
+            <a href="/LICENSE" target="_blank">&copy; 2025 Stainowy All rights reserved.</a>
+            <div>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="https://github.com/Stainowy/stainowy.pages.dev" target="_blank">Repository</a>
+            </div>
+        </footer>
+    </main>
+
+    <div class="notifications-container" id="notifications-container"></div>
+</body>
+</html>
