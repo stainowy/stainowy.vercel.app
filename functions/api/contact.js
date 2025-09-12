@@ -6,6 +6,18 @@ export async function onRequestPost(context) {
         if (!nickname || !email || !message || !turnstileResponse) {
             return new Response(JSON.stringify({ error: 'Missing fields' }), { status: 400 });
         }
+        
+        if (nickname.length > 100) {
+            return new Response(JSON.stringify({ error: 'Nickname exceeds maximum length of 100 characters' }), { status: 400 });
+        }
+
+        if (email.length > 240) {
+            return new Response(JSON.stringify({ error: 'Email exceeds maximum length of 240 characters' }), { status: 400 });
+        }
+
+        if (message.length > 1000) {
+            return new Response(JSON.stringify({ error: 'Message exceeds maximum length of 1000 characters' }), { status: 400 });
+        }
 
         const turnstileVerify = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
             method: 'POST',
