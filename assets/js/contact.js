@@ -72,7 +72,7 @@ function showNotification(message, type = 'success') {
     `;
     
     container.appendChild(notification);
-
+    
     const closeBtn = notification.querySelector('.close-btn');
     closeBtn.addEventListener('click', () => {
         hideNotification(notification);
