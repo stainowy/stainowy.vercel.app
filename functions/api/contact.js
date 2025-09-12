@@ -24,7 +24,7 @@ export async function onRequestPost(context) {
                 {
                     title: "New Message",
                     description: "You have received a new message.",
-                    color: "0x000",
+                    color:  0x000,
                     fields: [
                         { name: "Nickname", value: `\`${nickname}\``, inline: true },
                         { name: "Email", value: `\`${email}\``, inline: true },
