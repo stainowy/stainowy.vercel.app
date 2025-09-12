@@ -1,9 +1,7 @@
-## stainowy.pages.dev
-This is the code of my personal page :3
-Many aspects of the code are provisional, but it has to be that way, otherwise it falls apart on its head, on its neck.
+# Stainowy Portfolio
 
-See my website at: https://stainowy.pages.dev
+Here you'll find the code for my portfolio website. You can use it for your own purposes, but only in accordance with the License. If you like the site, I'd appreciate it if you left a star.
 
-If you like it, I would be grateful for a star <3.
-
-~Stainowy
+![HTML](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
